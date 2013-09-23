@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>禁これ オプション</title>
+    <link rel="stylesheet" type="text/css" href="./options.css" />
+    <script type="text/javascript" src="./jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="./options.js" /></script>
+  </head>
+  <body>
+    <h1>禁これ オプション</h1>
+    <form>
+      <ul>
+        <li>
+          <input type="checkbox" name="useGGKSMKK" id="useGGKSMKK">
+          <label for="useGGKSMKK">月月火水木金金ボタンを表示する
+        </li>
+      </ul>
+    </form>
+    <h2>スケジュール</h2>
+    <form>
+      <table id="schedule-table">
+        <tr>
+          <td></td>
+          <th class="date mo">月</th>
+          <th class="date tu">火</th>
+          <th class="date we">水</th>
+          <th class="date th">木</th>
+          <th class="date fr">金</th>
+          <th class="date sa">土</th>
+          <th class="date su">日</th>
+        </tr>
+        <tr>
+          <th class="hour">0:00-1:00</th>
+          <td><input type="checkbox" name="mo0" id="mo0" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu0" id="tu0" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we0" id="we0" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th0" id="th0" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr0" id="fr0" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa0" id="sa0" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su0" id="su0" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">1:00-2:00</th>
+          <td><input type="checkbox" name="mo1" id="mo1" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu1" id="tu1" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we1" id="we1" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th1" id="th1" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr1" id="fr1" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa1" id="sa1" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su1" id="su1" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">2:00-3:00</th>
+          <td><input type="checkbox" name="mo2" id="mo2" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu2" id="tu2" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we2" id="we2" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th2" id="th2" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr2" id="fr2" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa2" id="sa2" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su2" id="su2" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">3:00-4:00</th>
+          <td><input type="checkbox" name="mo3" id="mo3" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu3" id="tu3" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we3" id="we3" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th3" id="th3" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr3" id="fr3" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa3" id="sa3" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su3" id="su3" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">4:00-5:00</th>
+          <td><input type="checkbox" name="mo4" id="mo4" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu4" id="tu4" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we4" id="we4" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th4" id="th4" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr4" id="fr4" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa4" id="sa4" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su4" id="su4" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">5:00-6:00</th>
+          <td><input type="checkbox" name="mo5" id="mo5" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu5" id="tu5" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we5" id="we5" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th5" id="th5" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr5" id="fr5" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa5" id="sa5" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su5" id="su5" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">6:00-7:00</th>
+          <td><input type="checkbox" name="mo6" id="mo6" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu6" id="tu6" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we6" id="we6" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th6" id="th6" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr6" id="fr6" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa6" id="sa6" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su6" id="su6" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">7:00-8:00</th>
+          <td><input type="checkbox" name="mo7" id="mo7" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu7" id="tu7" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we7" id="we7" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th7" id="th7" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr7" id="fr7" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa7" id="sa7" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su7" id="su7" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">8:00-9:00</th>
+          <td><input type="checkbox" name="mo8" id="mo8" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu8" id="tu8" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we8" id="we8" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th8" id="th8" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr8" id="fr8" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa8" id="sa8" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su8" id="su8" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">9:00-10:00</th>
+          <td><input type="checkbox" name="mo9" id="mo9" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu9" id="tu9" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we9" id="we9" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th9" id="th9" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr9" id="fr9" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa9" id="sa9" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su9" id="su9" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">10:00-11:00</th>
+          <td><input type="checkbox" name="mo10" id="mo10" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu10" id="tu10" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we10" id="we10" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th10" id="th10" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr10" id="fr10" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa10" id="sa10" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su10" id="su10" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">11:00-12:00</th>
+          <td><input type="checkbox" name="mo11" id="mo11" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu11" id="tu11" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we11" id="we11" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th11" id="th11" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr11" id="fr11" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa11" id="sa11" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su11" id="su11" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">12:00-13:00</th>
+          <td><input type="checkbox" name="mo12" id="mo12" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu12" id="tu12" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we12" id="we12" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th12" id="th12" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr12" id="fr12" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa12" id="sa12" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su12" id="su12" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">13:00-14:00</th>
+          <td><input type="checkbox" name="mo13" id="mo13" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu13" id="tu13" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we13" id="we13" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th13" id="th13" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr13" id="fr13" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa13" id="sa13" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su13" id="su13" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">14:00-15:00</th>
+          <td><input type="checkbox" name="mo14" id="mo14" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu14" id="tu14" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we14" id="we14" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th14" id="th14" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr14" id="fr14" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa14" id="sa14" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su14" id="su14" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">15:00-16:00</th>
+          <td><input type="checkbox" name="mo15" id="mo15" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu15" id="tu15" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we15" id="we15" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th15" id="th15" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr15" id="fr15" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa15" id="sa15" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su15" id="su15" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">16:00-17:00</th>
+          <td><input type="checkbox" name="mo16" id="mo16" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu16" id="tu16" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we16" id="we16" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th16" id="th16" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr16" id="fr16" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa16" id="sa16" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su16" id="su16" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">17:00-18:00</th>
+          <td><input type="checkbox" name="mo17" id="mo17" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu17" id="tu17" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we17" id="we17" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th17" id="th17" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr17" id="fr17" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa17" id="sa17" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su17" id="su17" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">18:00-19:00</th>
+          <td><input type="checkbox" name="mo18" id="mo18" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu18" id="tu18" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we18" id="we18" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th18" id="th18" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr18" id="fr18" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa18" id="sa18" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su18" id="su18" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">19:00-20:00</th>
+          <td><input type="checkbox" name="mo19" id="mo19" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu19" id="tu19" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we19" id="we19" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th19" id="th19" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr19" id="fr19" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa19" id="sa19" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su19" id="su19" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">20:00-21:00</th>
+          <td><input type="checkbox" name="mo20" id="mo20" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu20" id="tu20" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we20" id="we20" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th20" id="th20" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr20" id="fr20" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa20" id="sa20" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su20" id="su20" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">21:00-22:00</th>
+          <td><input type="checkbox" name="mo21" id="mo21" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu21" id="tu21" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we21" id="we21" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th21" id="th21" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr21" id="fr21" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa21" id="sa21" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su21" id="su21" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">22:00-23:00</th>
+          <td><input type="checkbox" name="mo22" id="mo22" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu22" id="tu22" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we22" id="we22" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th22" id="th22" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr22" id="fr22" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa22" id="sa22" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su22" id="su22" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+        <tr>
+          <th class="hour">23:00-24:00</th>
+          <td><input type="checkbox" name="mo23" id="mo23" class="mo"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="tu23" id="tu23" class="tu"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="we23" id="we23" class="we"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="th23" id="th23" class="th"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="fr23" id="fr23" class="fr"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="sa23" id="sa23" class="sa"/><span class="status">プレイ可</span></td>
+          <td><input type="checkbox" name="su23" id="su23" class="su"/><span class="status">プレイ可</span></td>
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>

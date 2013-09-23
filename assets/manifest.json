@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "禁これ",
+  "version": "0.0.1",
+  "description": "艦これのプレイ可能時間を制限します",
+  "icons": {"128":"icon_128.png"},
+  "background": { 
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches":["http://www.dmm.com/netgame/social/-/gadgets/=/app_id=854854/"],
+      "js":["content.js"]
+    }
+  ],
+  "options_page":"options.html"
+}

@@ -1,0 +1,27 @@
+#schedule-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+#schedule-table th ,
+#schedule-table td {
+  padding: 4px;
+  border:1px solid #ccc;
+}
+#schedule-table th.hour{
+  width: 160px;
+}
+#schedule-table td{
+  font-size: 50%;
+  text-align:center;
+  width: 80px;
+  color: #900;
+}
+
+#schedule-table input[type="checkbox"] {
+  display:none;
+}
+#schedule-table .checked{
+  background-color: #ff9;
+  color:#090;
+}
+
