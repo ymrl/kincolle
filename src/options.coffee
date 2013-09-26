@@ -1,28 +1,27 @@
-dateKeys = [ "mo", "tu", "we", "th", "fr", "sa", "su"]
-
-
 save = (scheduleTable)->
-  localStorage.schedule = JSON.stringify(scheduleTableToObject(scheduleTable))
+  Kincolle.Schedule.save(scheduleTableToObject(scheduleTable))
   config =
     useGGKSMKK:$('#useGGKSMKK').prop('checked')
-  localStorage.config = JSON.stringify(config)
-
+  Kincolle.Config.save(config)
 
 load = (scheduleTable)->
-  if localStorage.schedule
-    scheduleObjectToTable(scheduleTable,JSON.parse(localStorage.schedule))
+  schedule = Kincolle.Schedule.load()
+  if schedule
+    scheduleObjectToTable(scheduleTable,schedule)
   else
     scheduleTable.find('input').each ()->
       toggleCheck $(this),true,scheduleTable
-  if localStorage.config
-    setOtherConfig(JSON.parse(localStorage.config))
+  setOtherConfig(Kincolle.Config.load())
 
 setOtherConfig = (config)->
+  if !config
+    return null
   if config.useGGKSMKK
     $('#useGGKSMKK').prop('checked',config.useGGKSMKK)
+
 getDate = (elm)->
   e = $(elm)
-  for k in dateKeys
+  for k in Kincolle.DAY_KEYS
     if e.hasClass(k)
       return k
 
@@ -95,7 +94,7 @@ $ ->
     save(scheduleTable)
   scheduleTable.find(".date").click (e)->
     t = $(@)
-    for k in dateKeys
+    for k in Kincolle.DAY_KEYS
       if t.hasClass k
         toggleDateAll scheduleTable,k,!t.hasClass('checked')
         break
